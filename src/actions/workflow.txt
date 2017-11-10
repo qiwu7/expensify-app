@@ -1,0 +1,11 @@
+old workflow
+    components calls action generator
+    action generator returns object
+    component dispatches object
+    redux store changes
+
+new workflow
+    components calls action generator
+    action generator returns function
+    component dispatches function (?)
+    function runs (has the ability to dispatch ohter actions and do whatever it wants)
