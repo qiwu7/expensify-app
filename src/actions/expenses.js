@@ -45,3 +45,31 @@ export const editExpense = (id, updates) => {
         updates
     };
 };
+
+// SET_EXPENSES
+export const setExpenses = (expenses) => {
+    return {
+        type: 'SET_EXPENSES',
+        expenses
+    };
+};
+
+export const startSetExpenses = () => {
+    return (dispatch) => {
+        // return the promise that we can chain on
+        return database.ref('expenses')
+            .once('value')
+            .then((snapshot) => {
+                const expenses = [];
+
+                snapshot.forEach((childSnapshot) => {
+                    expenses.push({
+                        id: childSnapshot.key,
+                        ...childSnapshot.val()
+                    })
+                });
+
+                dispatch(setExpenses(expenses));
+            });
+    };
+};
