@@ -1,6 +1,6 @@
 .box-layout {
     align-items: center;
-    background: url('/images/gg.jpg');
+    background: url('/images/sf.jpg');
     background-size: cover;
     display: flex;
     height: 100vh;
@@ -11,10 +11,13 @@
 .box-layout__box {
     background: fade-out(white, .15);
     border-radius: 5px;
-    color: rgb(153, 149, 149);
+    color: $dark-grey;
     padding: $l-size $m-size;
     text-align: center;
-    width: 40rem;
+    width: 25rem;
+    @media (min-width: $desktop-breakpoint) {
+        width: 40rem;
+    }
 }
 
 .box-layout__title {
