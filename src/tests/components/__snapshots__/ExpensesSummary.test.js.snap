@@ -1,25 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpensesSummary with 1 expense correctly 1`] = `
-<div>
-  <p>
-    Viewing 1 expense totalling $95.22
-  </p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      <p>
+        Viewing 
+        <span>
+          1
+        </span>
+         
+        expense
+         totalling 
+        <span>
+          $95.22
+        </span>
+      </p>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpensesSummary with 2 expenses correctly 1`] = `
-<div>
-  <p>
-    Viewing 2 expenses totalling $9,522,313.24
-  </p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      <p>
+        Viewing 
+        <span>
+          2
+        </span>
+         
+        expenses
+         totalling 
+        <span>
+          $9,522,313.24
+        </span>
+      </p>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpensesSummary with no expenses correctly 1`] = `
-<div>
-  <p>
-    No Expenses
-  </p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      No Expenses
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
